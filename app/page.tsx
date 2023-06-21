@@ -1,7 +1,18 @@
+
+"use client";
+
 import Image from "next/image";
 import styles from "./page.module.css";
+import DropDown from "./ui/dropdown";
+import * as React from "react";
 
 export default function Home() {
+  const [state, setState] = React.useState<{
+    show: boolean;
+  }>({
+    show: false,
+  });
+
   return (
     <main className={styles.main}>
       <div className={styles.description}>
@@ -36,6 +47,24 @@ export default function Home() {
           height={64}
           priority
         />
+      </div>
+
+      <div style={{ marginBottom: 360 }}>
+        <DropDown onClickOutside={() => setState(() => ({ show: false }))} show={state.show}>
+          <button
+            type="button"
+            aria-haspopup={true}
+            aria-controls="#info-panel"
+            onClick={() => setState({ show: !state.show })}
+            data-state={state.show ? "active" : "inactive"}
+            className={styles.ddtoggle}>
+            <span className={styles.badge}>NEW</span>
+            Information Panel
+            <svg className={styles.icon} focusable={false} aria-label="Arrow Down">
+              <use xlinkHref="#down-arrow" />
+            </svg>
+          </button>
+        </DropDown>
       </div>
 
       <div className={styles.grid}>
