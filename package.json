@@ -1,0 +1,38 @@
+{
+  "devDependencies": {
+    "@jest/globals": "~29.5",
+    "@types/node": "^20.3.1",
+    "@types/react": "^18.2.13",
+    "@types/react-dom": "^18.2.6",
+    "default-composer": "^0.4.0",
+    "eslint": "~8.43",
+    "eslint-config-next": "^13.4.6",
+    "next": "^13.4.6",
+    "react": "~18.2",
+    "react-dom": "~18.2",
+    "ts-jest": "~29.1",
+    "typescript": "~5.1.0"
+  },
+  "engines": {
+    "node": ">=20.3.1",
+    "npm": ">=9.7.1",
+    "yarn": ">=1.22.19"
+  },
+  "name": "typescript-next-web-components",
+  "peerDependencies": {
+    "jest": "~29.5"
+  },
+  "private": true,
+  "resolutions": {
+    "typescript": ">=3.3.1 <5.1.0"
+  },
+  "scripts": {
+    "build": "npx next build",
+    "format": "npx prettier --write .",
+    "lint": "npx next lint",
+    "dev": "npx next dev",
+    "start": "npx next start",
+    "test": "npx jest --run-in-band --collect-coverage ."
+  },
+  "version": "0.1.0"
+}

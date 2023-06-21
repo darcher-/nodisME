@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json.schemastore.org/prettierrc",
+  "arrowParens": "always",
+  "bracketSameLine": true,
+  "bracketSpacing": true,
+  "endOfLine": "auto",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "overrides": [
+    {
+      "files": "*.json",
+      "options": {
+        "printWidth": 200
+      }
+    },
+    {
+      "files": ".*rc",
+      "options": {
+        "parser": "json"
+      }
+    },
+    {
+      "files": ".nvmrc",
+      "options": {
+        "parser": "yaml"
+      }
+    }
+  ],
+  "printWidth": 96,
+  "proseWrap": "never",
+  "quoteProps": "consistent",
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "all",
+  "useTabs": false
+}
