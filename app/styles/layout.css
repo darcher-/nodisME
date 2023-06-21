@@ -1,0 +1,63 @@
+.autogrid {
+  box-sizing: border-box;
+  /** remove whitespace from container */
+  font-size: 0;
+  padding: 0.5rem; /* 8px */
+}
+
+.autogrid > * {
+  display: block;
+  margin: 0 auto 0.5rem; /* 0 auto 8px */
+  padding: 0 0.5rem 0.5rem; /* 0 8px 8px */
+
+  /** unnecessary, but for brevity... */
+  box-sizing: inherit; /* inherit border-box */
+  font-size: inherit; /* inherit 0px */
+}
+
+/** create vertical space in columns & prevent margin-collapsing */
+.autogrid > *:before {
+  content: '';
+  display: inline-block;
+  height: 0.5rem; /* 8px */
+  width: 0;
+  vertical-align: 0; /* baseline or 0% */
+}
+
+@media (min-width: 33.75em) {
+  /* 540px */
+
+  .autogrid > * {
+    display: inline-block;
+    margin: 0.5rem; /* 8px */
+    /** align columns/cards to top, middle, etc. */
+    vertical-align: top;
+  }
+
+  .autogrid > *:first-child:nth-last-child(1),
+  .autogrid > *:first-child:nth-last-child(3),
+  .autogrid > *:first-child:nth-last-child(3) ~ * {
+    width: calc(100% - 1rem); /* 100% - 16px */
+  }
+
+  .autogrid > *:first-child:nth-last-child(2),
+  .autogrid > *:first-child:nth-last-child(2) ~ *,
+  .autogrid > *:first-child:nth-last-child(4),
+  .autogrid > *:first-child:nth-last-child(4) ~ * {
+    width: calc(50% - 1rem); /* 50% - 16px */
+  }
+}
+
+@media (min-width: 50em) {
+  /* 800px */
+
+  .autogrid > *:first-child:nth-last-child(3),
+  .autogrid > *:first-child:nth-last-child(3) ~ * {
+    width: calc(33.333% - 1rem); /* 33.333% - 16px */
+  }
+
+  .autogrid > *:first-child:nth-last-child(4),
+  .autogrid > *:first-child:nth-last-child(4) ~ * {
+    width: calc(25% - 1rem); /* 25% - 16px */
+  }
+}
