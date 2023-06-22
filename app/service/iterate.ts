@@ -1,3 +1,4 @@
+
 class Help {
   /** Return if argument supplied is defined. */
   def(x) {
