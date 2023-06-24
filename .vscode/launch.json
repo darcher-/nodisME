@@ -1,0 +1,28 @@
+{
+  "version": "0.2.1",
+  "configurations": [
+    {
+      "name": "server<debug>",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "npm run next.local"
+    },
+    {
+      "name": "client<debug>",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://localhost:3000"
+    },
+    {
+      "name": "server-client<debug>",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "npm run next.local",
+      "serverReadyAction": {
+        "pattern": "started server on .+, url: (https?://.+)",
+        "uriFormat": "%s",
+        "action": "debugWithChrome"
+      }
+    }
+  ]
+}
