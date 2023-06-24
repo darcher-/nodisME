@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "rootDir": "./",
+    "strict": true,
+    "target": "esnext",
+    "module": "esnext",
+    "baseUrl": ".",
+    "noLib": true,
+    "sourceMap": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "checkJs": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "skipLibCheck": false,
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "paths": {
+      "@NoM/*": [
+        "./*"
+      ],
+    }
+  },
+  "include": [
+    "app"
+  ],
+  "exclude": [
+    "**/*tests.js",
+    ".next",
+    "dist",
+    "node_modules"
+  ]
+}

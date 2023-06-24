@@ -1,3 +1,65 @@
 {
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "rome.rome"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "rome.rome"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "rome.rome"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+  },
+  "[svg]": {
+    "editor.defaultFormatter": "jock.svg"
+  },
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "editor.acceptSuggestionOnEnter": "off",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.rome": true,
+    "source.formatDocument.rome": true,
+    "source.organizeImport.rome": true
+  },
+  "editor.cursorBlinking": "smooth",
+  "editor.cursorStyle": "block",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.fontFamily": "Fira Code",
+  "editor.fontSize": 11.34,
+  "editor.lineHeight": 1.67,
+  "editor.formatOnPaste": false,
+  "editor.formatOnSave": true,
+  "editor.formatOnType": false,
+  "editor.inlineSuggest.enabled": true,
+  "editor.smoothScrolling": true,
+  "eslint.enable": false,
+  "explorer.confirmDelete": false,
+  "explorer.sortOrder": "type",
+  "files.autoSave": "afterDelay",
+  "git.autofetch": true,
+  "git.enableSmartCommit": true,
+  "git.rebaseWhenSync": true,
+  "github.copilot.enable": {
+    "css": true,
+    "html": true,
+    "javascript": true,
+    "javascriptreact": true,
+    "json": true,
+    "markdown": false,
+    "md": true,
+    "mdx": true,
+    "plaintext": false,
+    "svg": true
+  },
+  "rome.requireConfiguration": true,
+  "rome_lsp.trace.server": "verbose",
+  // "search.useGlobalIgnoreFiles": true,
+  "workbench.editor.highlightModifiedTabs": true,
   "svg.preview.background": "custom"
 }
