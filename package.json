@@ -1,7 +1,7 @@
 {
 	"browserslist": [">0.2%", "not dead", "not op_mini all"],
 	"dependencies": {
-		"next": "^13.4.7",
+		"next": "^13.5.0",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0"
 	},
